@@ -1,0 +1,369 @@
+{
+  "success": true,
+  "credits_left": 100,
+  "rate_limit_left": 100,
+  "person": {
+    "publicIdentifier": "rmolinamir",
+    "linkedInIdentifier": "ACoAACT1FY8B2D-2f31gSifVjuX5j8gunJh3_c0",
+    "memberIdentifier": "620041615",
+    "linkedInUrl": "https://www.linkedin.com/in/rmolinamir",
+    "firstName": "Robert",
+    "lastName": "Molina",
+    "headline": "Staff Software Engineer",
+    "location": "St Cloud, Florida, United States of America",
+    "photoUrl": "https://media.licdn.com/dms/image/v2/D4E03AQFSOvBtV2bMCg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1689719207854?e=1755129600&v=beta&t=xRqWgPgrFVZY1OUgZX8CeWKaktQYKBlMGO0L3BD1spI",
+    "backgroundUrl": "https://media.licdn.com/dms/image/v2/D4E16AQGB8eTSWNJTfA/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1689719571132?e=1755129600&v=beta&t=cKWjqvox23mYzB4FBPqGr2i-kzC7AakNVA759tu5XKc",
+    "openToWork": false,
+    "premium": false,
+    "pronoun": "HE_HIM",
+    "showVerificationBadge": true,
+    "creationDate": {
+      "month": 11,
+      "year": 2017
+    },
+    "followerCount": 220,
+    "positions": {
+      "positionsCount": 7,
+      "positionHistory": [
+        {
+          "title": "Staff Software Engineer, MTS 1",
+          "companyName": "PayPal",
+          "companyLocation": "Remote",
+          "description": "",
+          "startEndDate": {
+            "start": {
+              "month": 2,
+              "year": 2025
+            },
+            "end": null
+          },
+          "contractType": "Full-time",
+          "companyLogo": "https://media.licdn.com/dms/image/v2/D560BAQGlX0cKdGRk-w/company-logo_400_400/company-logo_400_400/0/1725506319701?e=1755129600&v=beta&t=ramIr-0ZGuEtr6JBNuEqCJRk_aI0VK12MRdowWWPLMo",
+          "linkedInUrl": "https://www.linkedin.com/company/1482/",
+          "linkedInId": "1482"
+        },
+        {
+          "title": "Senior Software Engineer",
+          "companyName": "PayPal",
+          "companyLocation": "Remote",
+          "description": "• Joined PayPal to help kick off a next-gen Next.js rewrite of PayPal checkout focused on bleeding-edge web performance and personalization.\n• Reduced first-page load latency from over 6 seconds to around 3 seconds by optimizing server-side processes and utilizing Next.js streaming, driven by observability tools and metrics.\n• Engineered the web server for our high-traffic application, reliably handling millions of requests and generating millions of dollars in revenue.\n• Integrated PayPal’s authentication solutions into our application, including guarding for private endpoints, and enhancing security and user experience.\n• Implemented pure UI components with Tailwind CSS and shadcn/ui, improving the consistency and efficiency of the design system.\n• Acted as a code owner and tech lead, conducting code reviews, mentoring team members, and driving development best practices.",
+          "startEndDate": {
+            "start": {
+              "month": 9,
+              "year": 2023
+            },
+            "end": {
+              "month": 2,
+              "year": 2025
+            }
+          },
+          "contractType": "Full-time",
+          "companyLogo": "https://media.licdn.com/dms/image/v2/D560BAQGlX0cKdGRk-w/company-logo_400_400/company-logo_400_400/0/1725506319701?e=1755129600&v=beta&t=ramIr-0ZGuEtr6JBNuEqCJRk_aI0VK12MRdowWWPLMo",
+          "linkedInUrl": "https://www.linkedin.com/company/1482/",
+          "linkedInId": "1482"
+        },
+        {
+          "title": "Software Engineer",
+          "companyName": "Olympusat",
+          "companyLocation": "West Palm Beach, Florida · Hybrid",
+          "description": "• Implemented a Node.js SDK to integrate with third-party vendors for our media distribution pipeline, reducing integration time from months down to just two weeks.\n• Developed scalable, event-driven services processing tens of thousands of events daily using Domain-Driven Design (DDD) principles.\n• Designed, implemented, and maintained GraphQL and REST APIs (following OpenAPI standards) from scratch.\n• Built multiple applications with React.js and employed micro-frontend patterns to deliver dynamic, reusable widgets across diverse projects.\n• Used AWS RDS (PostgreSQL, Aurora DB), DynamoDB, and MongoDB for scalable data storage solutions, while automating infrastructure deployment using Serverless Framework and AWS CDK, with monitoring through CloudWatch and Elasticsearch.",
+          "startEndDate": {
+            "start": {
+              "month": 2,
+              "year": 2020
+            },
+            "end": {
+              "month": 9,
+              "year": 2023
+            }
+          },
+          "contractType": "Full-time",
+          "companyLogo": "https://media.licdn.com/dms/image/v2/D4E0BAQFfhpeF2qGv8A/company-logo_400_400/company-logo_400_400/0/1724258731594/olympusat_logo?e=1755129600&v=beta&t=EiI3tPwWM3skbwyy_nFlEyVT2gWC3EMfzwOoh_pO64U",
+          "linkedInUrl": "https://www.linkedin.com/company/146323/",
+          "linkedInId": "146323"
+        },
+        {
+          "title": "Software Engineer",
+          "companyName": "Bridge for Billions",
+          "companyLocation": "Remote",
+          "description": "• Played a key role as a founding engineer in developing a platform to mentor startup founders, guiding them through programs and preparing them for funding rounds.\n• Web development using React.js, integrating technologies like React-Redux to create dynamic, user-friendly interfaces.\n• Developed a REST API with Django REST Framework and Python, ensuring a robust backend infrastructure.\n• Implemented observability tools using Sentry, enhancing the platform’s reliability and performance monitoring.\n• Worked with developers and UI/UX designers to deliver a cohesive, user-centric platform, supporting\nentrepreneurs in their growth journey. Maintained high code quality standards through unit testing and code reviews.",
+          "startEndDate": {
+            "start": {
+              "month": 4,
+              "year": 2019
+            },
+            "end": {
+              "month": 2,
+              "year": 2020
+            }
+          },
+          "contractType": "Full-time",
+          "companyLogo": "https://media.licdn.com/dms/image/v2/D4D0BAQGl7-HrO0ABuA/company-logo_400_400/company-logo_400_400/0/1720789146433/bridge_for_billions_logo?e=1755129600&v=beta&t=0e9CGPdJVs_F0hu8mJ1QHwFHWSBu6nZnH-wYA9zFJ2U",
+          "linkedInUrl": "https://www.linkedin.com/company/6574101/",
+          "linkedInId": "6574101"
+        },
+        {
+          "title": "Junior Software Engineer",
+          "companyName": "Servify App",
+          "companyLocation": "Remote",
+          "description": "• Developed a frontend application using React.js, React-Redux, and Redux-Saga, ensuring responsive and efficient user interfaces.\n• Built backend services with Node.js on Google Cloud Platform (GCP).\n• Implemented OAuth flows, including authorization code and PKCE, to enhance secure user authentication and authorization.",
+          "startEndDate": {
+            "start": {
+              "month": 9,
+              "year": 2018
+            },
+            "end": {
+              "month": 3,
+              "year": 2019
+            }
+          },
+          "contractType": "Internship",
+          "companyLogo": "https://media.licdn.com/dms/image/v2/C4E0BAQE0FUsW7A0N-A/company-logo_400_400/company-logo_400_400/0/1630586171945/servify_app_logo?e=1755129600&v=beta&t=_z66V66aJCqNz4ePHCInL9LKZI-2IpmPgD6I1QBfjMw",
+          "linkedInUrl": "https://www.linkedin.com/company/35616134/",
+          "linkedInId": "35616134"
+        },
+        {
+          "title": "Junior Software Engineer",
+          "companyName": "Bonpreu Foods",
+          "companyLocation": "Fort Lauderdale, Florida · On-site",
+          "description": "• Developed a full-stack application using the MERN stack (Express.js, Node.js, React.js, MongoDB).\n• Integrated Stripe API for payments and automated subscriptions with webhook support for real-time updates.\n• Implemented email services through third-party API integrations and media processing for the product catalog using Cloudinary API.",
+          "startEndDate": {
+            "start": {
+              "month": 6,
+              "year": 2018
+            },
+            "end": {
+              "month": 9,
+              "year": 2018
+            }
+          },
+          "contractType": "Internship",
+          "companyLogo": null,
+          "linkedInUrl": "https://www.linkedin.com/search/results/all/?keywords=Bonpreu+Foods"
+        },
+        {
+          "title": "Industrial Engineer",
+          "companyName": "Unilever",
+          "companyLocation": "Carabobo, Venezuela · On-site",
+          "description": "• Developed data-gathering processes for our manufacturing plant, providing insights into downtime and production line issues, leading us to record-breaking production levels.\n• Implemented data-driven solutions to track and improve the Overall Equipment Efficiency (OEE) by\nautomating analysis and reporting.\n• Automated the production level reports, reducing operating costs, and improving event tracking, delivering critical insights to senior leadership.\n• Monitored and managed daily operational expenses, ensuring cost efficiency and enhanced productivity.",
+          "startEndDate": {
+            "start": {
+              "month": 3,
+              "year": 2017
+            },
+            "end": {
+              "month": 6,
+              "year": 2018
+            }
+          },
+          "contractType": "Full-time",
+          "companyLogo": "https://media.licdn.com/dms/image/v2/C4E0BAQF6TJKa56uLAg/company-logo_400_400/company-logo_400_400/0/1663661971310/unilever_logo?e=1755129600&v=beta&t=QBHkwB1MDYHZZ4R1YqRkHP6l-e-jYxLvD7wB3_vUTWY",
+          "linkedInUrl": "https://www.linkedin.com/company/1248/",
+          "linkedInId": "1248"
+        }
+      ]
+    },
+    "schools": {
+      "educationsCount": 1,
+      "educationHistory": [
+        {
+          "degreeName": "Bachelor of Science - BS",
+          "fieldOfStudy": "Mechanical Engineering",
+          "linkedInUrl": "https://www.linkedin.com/company/15102759/",
+          "schoolLogo": "https://media.licdn.com/dms/image/v2/C510BAQGg11sd7qawHg/company-logo_400_400/company-logo_400_400/0/1631408796279/universidad_jos_antonio_pez_logo?e=1755129600&v=beta&t=8fcHtBlvW0gH-mh6_I29gYa3yykyyr66Rxc00lZLqwk",
+          "schoolName": "Universidad José Antonio Páez",
+          "startEndDate": {
+            "start": {
+              "month": 1,
+              "year": 2011
+            },
+            "end": {
+              "month": 1,
+              "year": 2017
+            }
+          }
+        }
+      ]
+    },
+    "skills": [
+      "Domain-Driven Design (DDD)",
+      "Problem Solving",
+      "Software Development",
+      "Object-Oriented Programming (OOP)",
+      "Full-Stack Development",
+      "MongoDB",
+      "Mathematics",
+      "REST APIs",
+      "TypeScript",
+      "Amazon Web Services (AWS)",
+      "SQL",
+      "C#",
+      "React.js",
+      "Front-End Development",
+      "JavaScript",
+      "Node.js",
+      "Python (Programming Language)",
+      "GraphQL",
+      "NoSQL",
+      "Programming",
+      "Algorithms",
+      "Git",
+      "HTML5",
+      "Cascading Style Sheets (CSS)",
+      "Serverless Framework"
+    ],
+    "languages": [
+      "English",
+      "Spanish"
+    ],
+    "languagesWithProficiency": [
+      {
+        "language": "English",
+        "proficiency": "Native or bilingual proficiency"
+      },
+      {
+        "language": "Spanish",
+        "proficiency": "Native or bilingual proficiency"
+      }
+    ],
+    "recommendations": {
+      "recommendationsCount": 6,
+      "recommendationHistory": [
+        {
+          "caption": "July 22, 2023, Kyle managed Robert directly",
+          "description": "As Roberts direct supervisor for over 3 years at Olympusat, Inc. I can attest to the integral role he played in our operations development. Robert is a thoughtful, competent, and hard working developer who has tremendous skill and one who has grown tremendously in his craft over the period of time I have had the pleasure to work with him. \n\nHe was brought onto the team to support a senior level engineer to which Robert was able to not only fulfill that role in due time but he completely surpassed the expectations that were placed upon him and moved on to becoming an essential architect himself.\n\nHe is a thoughtful and respectful person who makes himself available to the rest of the team frequently. He would regularly take initiatives for code shares and provided enormous benefit to the rest of the team with deep dives into his code and thought process which allowed for insightful discussion and knowledge transfer that is hard to replicate.\n\nI recommend Robert highly as he is a dependable and talented developer who brought tremendous value to the team. He is a great colleague and friend as well as an overall good person to work with.",
+          "authorFullname": "Kyle K.",
+          "authorUrl": "https://www.linkedin.com/in/kylekanouse"
+        },
+        {
+          "caption": "July 3, 2023, Keiler worked with Robert on the same team",
+          "description": "I wholeheartedly recommend Robert as an exceptional developer. While working together, I was consistently impressed by his extensive knowledge and unwavering dedication to his work. His depth of understanding of various technologies was remarkable, and he constantly delivered high-quality code and solutions. Not only did he eagerly tackle challenging tasks, but they also proactively sought out opportunities to expand his skills and contribute to the team's success. His strong work ethic and ability to collaborate effectively with colleagues made him a valuable asset to our team. I have no doubt that Robert will continue to excel and thrive in their future endeavors.",
+          "authorFullname": "Keiler Gonzalez Torres",
+          "authorUrl": "https://www.linkedin.com/in/keiler"
+        },
+        {
+          "caption": "June 14, 2023, Jeremy was senior to Robert but didn't manage Robert directly",
+          "description": "Robert is an outstanding software engineer whom I had the privilege of working with for the last few years. Throughout our professional journey together, Robert consistently demonstrated exceptional skills, dedication, and a strong work ethic that set him apart as an invaluable team member.\n\nRobert's technical expertise is truly commendable. His in-depth knowledge of programming languages, frameworks, and software development principles allowed him to consistently deliver high-quality solutions. Whether it was designing complex architectures, optimizing code performance, or troubleshooting intricate issues, Robert's problem-solving abilities were exemplary. His commitment to staying up-to-date with the latest industry trends and technologies ensured that our projects always met or exceeded expectations.\n\nAs a team player, Robert excelled in collaborative environments. He actively participated in discussions, offered insightful suggestions, and listened attentively to his colleagues' perspectives. His excellent communication skills and ability to explain complex technical concepts made him an effective bridge between the development team and stakeholders. Robert's patience, empathy, and willingness to assist others contributed significantly to the team's overall success.\n\nOne of Robert's key strengths is his ability to adapt to evolving project requirements and tight deadlines. He consistently demonstrated a proactive attitude and a willingness to take on challenging tasks. His capacity to handle pressure and deliver results within stipulated timelines was truly commendable. Robert's meticulous approach to project management, coupled with his strong organizational skills, ensured that critical milestones were consistently met.\n\nFurthermore, Robert's commitment to self-improvement and professional growth was evident throughout our time working together. He frequently engaged in self-directed learning, seeking out new technologies and best practices to enhance his skill set. Robert's ability to quickly grasp and apply new concepts was remarkable and often proved invaluable in tackling complex development problems.\n\nI cannot endorse Robert enough as a software engineer. His technical expertise, collaborative nature, adaptability, and continuous drive for improvement make him an exceptional asset to any software development team. Robert's dedication and unwavering commitment to delivering exceptional results are qualities that set him apart. I have no doubt that he will continue to thrive in his future endeavors and make significant contributions to the field of software engineering.",
+          "authorFullname": "Jeremy Simkins",
+          "authorUrl": "https://www.linkedin.com/in/jpsimkins"
+        },
+        {
+          "caption": "June 12, 2023, Adam worked with Robert but on different teams",
+          "description": "Robert is an outstanding engineer. Extremely detail oriented, meticulous, knowledgeable, approachable, and friendly. He's humble, teachable, and always willing to help or offer suggestions. I worked with Robert for over 3 years and really can't recommend him enough. He'll be a valuable asset to any team.",
+          "authorFullname": "Adam Gedney",
+          "authorUrl": "https://www.linkedin.com/in/gedneyadam"
+        },
+        {
+          "caption": "March 4, 2020, Hannes worked with Robert on the same team",
+          "description": "Robert is an extremely responsible, very accurate and best-practices-following Software Developer. It happened not only once that I was surprised by his smart, yet easily readable, code solutions to a problem. He constantly thought about future features we will most likely implement and wrote his code so scalable, it sometimes only required to add e.g. a new Object to create an entire Table. Even though Robert worked remotely, it felt like he was being present with us in the office. Robert does not need to be micromanaged, he simply gathers requirements and comes up with solutions. ",
+          "authorFullname": "Hannes Reinsch",
+          "authorUrl": "https://www.linkedin.com/in/hannesreinsch"
+        },
+        {
+          "caption": "February 25, 2020, Jaime managed Robert directly",
+          "description": "My experience working with Robert during the last year was really great. He is a goal achiever, detail-oriented and resilient developer that always shows full ownership of his responsibilities. Though he was working 100% of the time remote in a different timezone, he was always accountable and communication was fluid enough to always know what Robert was working on and his progress during our sprints.\nOther than that, he is really passionate about coding, a self-learner with lots of interests in this industry so I'm really sure he will shine in his career as a Developer.\nHe is definitely one of the best developers I had the pleasure to work with.",
+          "authorFullname": "Jaime Mateo Herrero",
+          "authorUrl": "https://www.linkedin.com/in/jaime-mateo-herrero"
+        }
+      ]
+    },
+    "certifications": {
+      "certificationsCount": 0,
+      "certificationHistory": []
+    },
+    "testScores": {
+      "testScoresCount": 0,
+      "testScoreHistory": []
+    },
+    "volunteeringExperiences": {
+      "volunteeringExperiencesCount": 0,
+      "volunteeringExperienceHistory": []
+    },
+    "interests": {
+      "topVoices": [
+        {
+          "publicIdentifier": "andrew-huberman",
+          "linkedinIdentifier": "ACoAABuMHQEBRgK6mHooSpeM-qXlvbEV4hs5f0c",
+          "firstName": "Andrew",
+          "lastName": "Huberman",
+          "followersCount": 1848834
+        },
+        {
+          "publicIdentifier": "alexchriss",
+          "linkedinIdentifier": "ACoAAAAa4XEByOyovpYLeEHZr72ofWW0pDmy95I",
+          "firstName": "Alex",
+          "lastName": "Chriss",
+          "followersCount": 61116
+        }
+      ],
+      "companies": [
+        {
+          "linkedinIdentifier": "1035",
+          "name": "Microsoft",
+          "url": "https://www.linkedin.com/company/microsoft/",
+          "slug": "microsoft",
+          "followerCount": 25587077
+        },
+        {
+          "linkedinIdentifier": "1248",
+          "name": "Unilever",
+          "url": "https://www.linkedin.com/company/unilever/",
+          "slug": "unilever",
+          "followerCount": 19859874
+        }
+      ]
+    }
+  },
+  "company": {
+    "linkedInId": "1482",
+    "name": "PayPal",
+    "universalName": "paypal",
+    "linkedInUrl": "https://www.linkedin.com/company/1482",
+    "employeeCount": 34278,
+    "followerCount": 1495306,
+    "employeeCountRange": {
+      "start": 10001,
+      "end": 1
+    },
+    "websiteUrl": "https://www.paypal.com/us/home",
+    "tagline": null,
+    "description": "We're championing possibilities for all by making money fast, easy, and more enjoyable. Our hope is unlock opportunities for people in their everyday lives and empower the millions of people and businesses around the world who trust, rely, and use PayPal every day. \n\nFor support, visit the PayPal Help Center. https://payp.al/help\n\nFor employment opportunities, check out our job openings in the 'Jobs' tab. We're an equal opportunity employer that welcomes diversity, and offer generous benefits to help you thrive at work and in your free time.\n",
+    "industry": "Software Development",
+    "phone": null,
+    "specialities": [
+      "Online Payments",
+      "Mobile Commerce",
+      "Payment Security",
+      "Money Transfers",
+      "Payment Processing",
+      "Monetization for Developers",
+      "E-commerce"
+    ],
+    "headquarter": {
+      "city": "San Jose",
+      "country": "US",
+      "postalCode": "95131",
+      "geographicArea": "CA",
+      "street1": "2211 North First Street",
+      "street2": null
+    },
+    "logo": "https://media.licdn.com/dms/image/v2/D560BAQGlX0cKdGRk-w/company-logo_400_400/company-logo_400_400/0/1725506319701?e=1755129600&v=beta&t=ramIr-0ZGuEtr6JBNuEqCJRk_aI0VK12MRdowWWPLMo",
+    "fundingData": {
+      "numberOfFundingRounds": 6,
+      "crunchbaseOrganizationUrl": "https://www.crunchbase.com/organization/paypal?utm_source=linkedin&utm_medium=referral&utm_campaign=linkedin_companies&utm_content=profile_cta",
+      "lastFundingRound": {
+        "fundingType": "Post IPO debt",
+        "moneyRaised": {
+          "amount": "5000000000",
+          "currencyCode": "USD"
+        },
+        "fundingRoundUrl": "https://www.crunchbase.com/funding_round/paypal-post-ipo-debt--e7a4b2a1?utm_source=linkedin&utm_medium=referral&utm_campaign=linkedin_companies&utm_content=last_funding",
+        "announcedOn": "2023-06-07T00:00:00.000Z",
+        "numberOfOtherInvestors": 0,
+        "investorsUrl": "https://www.crunchbase.com/funding_round/paypal-post-ipo-debt--e7a4b2a1?utm_source=linkedin&utm_medium=referral&utm_campaign=linkedin_companies&utm_content=all_investors",
+        "leadInvestors": []
+      }
+    },
+    "backgroundUrl": "https://media.licdn.com/dms/image/v2/D561BAQGxw4K9UI8qTg/company-background_10000/company-background_10000/0/1725506037994/paypal_cover?e=1750276800&v=beta&t=hww3ZJ5WaAFJBnmEv5_xmhTq5ZrCmuClqMyp5iwhXrc"
+  }
+}

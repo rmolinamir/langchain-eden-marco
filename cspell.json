@@ -1,0 +1,59 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "langchain",
+    "eden",
+    "marco",
+    "ruff",
+    "mypy",
+    "pyproject",
+    "pyupgrade",
+    "pyflakes",
+    "pycodestyle",
+    "flake8",
+    "isort",
+    "precommit",
+    "pre-commit",
+    "uv",
+    "astral"
+  ],
+  "ignorePaths": [
+    ".git/**",
+    ".venv/**",
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.pytest_cache/**",
+    "**/.mypy_cache/**",
+    "**/.ruff_cache/**",
+    "**/__pycache__/**",
+    "**/*.pyc",
+    "**/*.pyo",
+    "**/*.pyd",
+    "**/*.so",
+    "**/*.dylib",
+    "**/*.dll",
+    "**/*.exe",
+    "**/*.egg-info/**",
+    "**/*.egg",
+    "**/.coverage",
+    "**/htmlcov/**"
+  ],
+  "ignoreRegExpList": [
+    "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}\\b",
+    "\\bhttps?://[^\\s]+\\b",
+    "\\b\\d+\\b",
+    "\\b0x[0-9a-fA-F]+\\b",
+    "\\b[A-Z_]+\\b"
+  ],
+  "allowCompoundWords": true,
+  "dictionaries": [
+    "en_US",
+    "typescript",
+    "node",
+    "softwareTerms",
+    "filetypes",
+    "python"
+  ]
+}
