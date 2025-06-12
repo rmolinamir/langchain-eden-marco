@@ -1,9 +1,13 @@
-from .linkedin import get_linkedin_profile
+from .chain import chain
 
 
 def main() -> None:
     """Run the main function for chapter 2."""
-    get_linkedin_profile()
+    chain(
+        full_name="Robert Molina",
+        company_name="PayPal",
+        job_title="Software Engineer",
+    )
 
 
 if __name__ == "__main__":

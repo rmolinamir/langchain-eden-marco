@@ -9,6 +9,7 @@ dependencies = [
   "langchain-community>=0.3.25",
   "langchain-core>=0.3.65",
   "langchain-ollama>=0.3.3",
+  "questionary>=2.1.0",
   "types-requests>=2.32.4.20250611",
 ]
 
