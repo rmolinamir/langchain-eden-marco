@@ -6,10 +6,6 @@ from langchain_ollama import ChatOllama
 
 from .api import search_linkedin_profile
 
-PERSONA = """
-You are a highly intelligent assistant capable of understanding and executing specific actions based on user requests. Your goal is to assist the user as efficiently and accurately as possible without deviating from their instructions.
-"""
-
 FORMAT_INSTRUCTIONS = """
 Please follow these formatting instructions carefully:
 
@@ -23,7 +19,7 @@ Observation: [Describe the outcome of the action]
 
 2. If you can answer the user's question without performing any additional actions, use the following format:
 '''
-Thought: Do I need to use a tool? No
+Thought: Do I have the information I need to answer the user's question? Yes
 Final Answer: [Provide your answer here]
 '''
 
@@ -45,11 +41,7 @@ Your answer should contain only a string with the LinkedIn profile URL without a
 If you cannot find a LinkedIn profile URL, return an empty string.
 """
 
-END = """
-End of instructions. Please proceed with answering the user's question following the guidelines provided above.
-"""
-
-template = PERSONA + FORMAT_INSTRUCTIONS + COMMAND + END
+template = FORMAT_INSTRUCTIONS + COMMAND
 
 
 def linkedin_lookup_agent(full_name: str, company_name: str, job_title: str) -> str:
