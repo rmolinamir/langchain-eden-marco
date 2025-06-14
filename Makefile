@@ -21,7 +21,7 @@ check-all: lint format typecheck spell
 
 # Run the project
 run:
-	uv run --env-file .env python src/main.py
+	uv run --env-file .env python src/main.py $(filter-out $@,$(MAKECMDGOALS))
 
 # Clean up Python cache files
 clean:
@@ -38,4 +38,8 @@ clean:
 	find . -type d -name ".coverage" -exec rm -rf {} +
 	find . -type d -name "htmlcov" -exec rm -rf {} +
 	find . -type d -name "dist" -exec rm -rf {} +
-	find . -type d -name "build" -exec rm -rf {} + 
+	find . -type d -name "build" -exec rm -rf {} +
+
+# Allow passing arguments to make run
+%:
+	@: 
