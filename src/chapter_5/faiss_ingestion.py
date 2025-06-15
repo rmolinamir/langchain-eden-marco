@@ -17,7 +17,7 @@ def main() -> None:
     docs = text_splitter.split_documents(documents=loader.load())
     embeddings = OllamaEmbeddings(model="nomic-embed-text")
 
-    FAISS.from_documents(docs, embeddings).save_local("faiss_index")
+    FAISS.from_documents(docs, embeddings).save_local("chapter_5_faiss_index")
 
 
 if __name__ == "__main__":

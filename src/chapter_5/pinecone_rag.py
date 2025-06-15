@@ -7,9 +7,9 @@ from langchain_ollama import ChatOllama, OllamaEmbeddings
 from langchain_pinecone import PineconeVectorStore
 
 
-def project_2025_rag() -> None:
+def pinecone_rag() -> None:
     """
-    Project 2025 RAG.
+    RAG of the Project 2025 PDF using Pinecone.
     """
     llm = ChatOllama(model="llama3.1:8b")
     embeddings = OllamaEmbeddings(model="nomic-embed-text")
@@ -48,4 +48,4 @@ def project_2025_rag() -> None:
 
 
 if __name__ == "__main__":
-    project_2025_rag()
+    pinecone_rag()

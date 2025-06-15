@@ -9,7 +9,7 @@ def main() -> None:
     embeddings = OllamaEmbeddings(model="nomic-embed-text")
 
     vectorstore = FAISS.load_local(
-        "faiss_index", embeddings, allow_dangerous_deserialization=True
+        "chapter_5_faiss_index", embeddings, allow_dangerous_deserialization=True
     )
     llm = ChatOllama(model="llama3.1:8b")
 

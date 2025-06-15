@@ -17,6 +17,18 @@
       "envFile": "${workspaceFolder}/.env",
       "justMyCode": true,
       "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Streamlit",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "args": [
+        "run",
+        "${workspaceFolder}/src/chapter_6/app.py",
+        "--server.port",
+        "8501"
+      ]
     }
   ]
 }

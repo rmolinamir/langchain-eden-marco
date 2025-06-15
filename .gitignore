@@ -12,5 +12,6 @@ wheels/
 # Environment variables
 .env
 
-# Generated files
-faiss_index/
+# Generated artifacts
+**_faiss_index/
+chapter_6_langchain_docs/
