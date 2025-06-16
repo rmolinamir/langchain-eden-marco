@@ -703,7 +703,7 @@ wheels = [
 ]
 
 [[package]]
-name = "langchain-eden-marco"
+name = "langchain-learning"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
