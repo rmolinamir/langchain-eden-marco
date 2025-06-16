@@ -1,10 +1,9 @@
 from langchain.prompts import PromptTemplate
 from langchain_ollama import ChatOllama
 
-from linkedin.agent import linkedin_lookup_agent
-from linkedin.api import get_linkedin_profile
-
-from .output_parsers import Summary, summary_output_parser
+from src.chapter_2.linkedin.agent import linkedin_lookup_agent
+from src.chapter_2.linkedin.api import get_linkedin_profile
+from src.chapter_2.output_parsers import Summary, summary_output_parser
 
 summary_template = """
 Given the LinkedIn profile about a person:

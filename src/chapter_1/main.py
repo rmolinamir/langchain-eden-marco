@@ -1,4 +1,4 @@
-from .chain import chain
+from src.chapter_1.chain import chain
 
 
 def main() -> None:

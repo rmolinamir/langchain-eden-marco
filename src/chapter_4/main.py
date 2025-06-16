@@ -11,9 +11,8 @@ from langchain_core.runnables import Runnable
 from langchain_core.tools import render_text_description
 from langchain_ollama import ChatOllama
 
-from chapter_4.callbacks import AgentCallbackHandler
-
-from .tools import get_text_length
+from src.chapter_4.callbacks import AgentCallbackHandler
+from src.chapter_4.tools import get_text_length
 
 template = """
 Answer the following questions as best you can. You have access to the following tools:

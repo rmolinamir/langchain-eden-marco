@@ -1,22 +1,28 @@
-from csv_agent import csv_agent
 from langchain import hub
 from langchain.agents import AgentExecutor, Tool, create_react_agent
 from langchain_ollama import ChatOllama
-from python_agent import python_agent
+
+from src.chapter_7.basic_math_agent import basic_math_agent
+from src.chapter_7.csv_agent import csv_agent
+from src.chapter_7.python_agent import python_agent
 
 instructions = """
 - You are a a router agent that can route questions to the appropriate agent.
 - **IMPORTANT:** You must follow the RAG format or else you will run into output parsing errors.
 """
 
-
-python_agent_description = """
-Use when transforming natural language into python code and executing it, returning the output of the code execution.
+basic_math_agent_description = """
+Use when answering questions about basic math.
 **IMPORTANT:** ONLY accepts natural language as the action input.
 """
 
 csv_agent_description = """
 Use when answering questions about the data in the Game of Thrones episodes CSV dataset.
+**IMPORTANT:** ONLY accepts natural language as the action input.
+"""
+
+python_agent_description = """
+Use when transforming natural language into python code and executing it, returning the output of the code execution.
 **IMPORTANT:** ONLY accepts natural language as the action input.
 """
 
@@ -27,6 +33,11 @@ def router_agent() -> AgentExecutor:
     llm = ChatOllama(model="llama3.2:3b", temperature=0)
     prompt = base_prompt.partial(instructions=instructions)
     tools = [
+        Tool(
+            name="basic_math_agent",
+            description=basic_math_agent_description,
+            func=basic_math_agent,
+        ),
         Tool(
             name="csv_agent",
             description=csv_agent_description,

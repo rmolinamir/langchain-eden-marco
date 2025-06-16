@@ -28,11 +28,7 @@ chapter_6:
 
 # Default rule for running chapters
 chapter_%:
-	uv run --env-file .env python src/chapter_$*/main.py
-
-# Run the project
-run:
-	uv run --env-file .env python src/main.py $(filter-out $@,$(MAKECMDGOALS))
+	uv run --env-file .env python -m src.chapter_$*.main
 
 # Clean up Python cache files
 clean:

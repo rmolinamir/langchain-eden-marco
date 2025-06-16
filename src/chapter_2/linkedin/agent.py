@@ -4,7 +4,7 @@ from langchain.prompts import PromptTemplate
 from langchain_core.tools import Tool
 from langchain_ollama import ChatOllama
 
-from .api import search_linkedin_profile
+from src.chapter_2.linkedin.api import search_linkedin_profile
 
 FORMAT_INSTRUCTIONS = """
 Please follow these formatting instructions carefully:

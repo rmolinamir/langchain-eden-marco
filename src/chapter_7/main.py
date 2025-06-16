@@ -1,4 +1,4 @@
-from router_agent import router_agent
+from src.chapter_7.router_agent import router_agent
 
 python_agent_input = """
 - Generate and save in the current working directory 15 QR codes that point to https://www.robertmolina.dev.

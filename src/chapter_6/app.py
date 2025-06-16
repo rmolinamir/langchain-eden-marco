@@ -66,81 +66,18 @@ def format_response(answer: dict[str, str]) -> str:
     return f"{answer.get('result')}\n\nSources:\n{format_sources(sources)}"
 
 
-# Set Matrix/hacker CLI theme
+# Configure the Streamlit page with a clean, modern look
 streamlit.set_page_config(
-    page_title="LangGPT - Matrix CLI",
+    page_title="LangGPT",
     page_icon="🤖",
     layout="wide",
     initial_sidebar_state="expanded",
+    menu_items={
+        "Get Help": None,
+        "Report a bug": None,
+        "About": "# LangGPT\nA modern AI chat interface powered by LangChain",
+    },
 )
-
-# Custom CSS for hacker CLI theme with sticky input and link wrapping
-streamlit.markdown(
-    """
-    <style>
-    /* Main theme */
-    html, body, [data-testid="stAppViewContainer"] {
-        background-color: #000 !important;
-        color: #00ff00 !important;
-        font-family: 'Fira Mono', 'Consolas', monospace !important;
-    }
-    /* Chat messages */
-    .stChatMessage, .stChatMessageContent {
-        background-color: #181c1b !important;
-        color: #00ff00 !important;
-        border: 1px solid #00ff00 !important;
-        font-family: 'Fira Mono', 'Consolas', monospace !important;
-    }
-    /* Sidebar */
-    .stSidebar, .stSidebarContent {
-        background-color: #111 !important;
-        color: #00ff00 !important;
-        border-right: 2px solid #00ff00 !important;
-    }
-    /* Text elements */
-    .stMarkdown, .stMetric, .stHeader, .stSubheader {
-        color: #00ff00 !important;
-        font-family: 'Fira Mono', 'Consolas', monospace !important;
-    }
-    /* Links */
-    a {
-        color: #00ff00 !important;
-        text-decoration: underline;
-        word-break: break-all !important;
-        white-space: pre-wrap !important;
-        overflow-wrap: break-word !important;
-    }
-    /* Input container at bottom */
-    [data-testid="stForm"] {
-        position: fixed !important;
-        bottom: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        background: #000 !important;
-        padding: 1rem !important;
-        z-index: 999999 !important;
-        border-top: 2px solid #00ff00 !important;
-    }
-    /* Input styling */
-    .stTextInput input {
-        background-color: #000 !important;
-        color: #00ff00 !important;
-        border: 1.5px solid #00ff00 !important;
-        font-family: 'Fira Mono', 'Consolas', monospace !important;
-        padding: 0.5rem !important;
-    }
-    /* Add padding to main content to prevent overlap with fixed input */
-    .main > div {
-        padding-bottom: 100px !important;
-    }
-    /* Hide default streamlit branding */
-    #MainMenu, footer, header {display: none !important;}
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
-streamlit.header("LangGPT")
 
 # Initialize session state
 if (
@@ -152,61 +89,97 @@ if (
     streamlit.session_state.answers_history = []
     streamlit.session_state.chat_history = []
 
-# Display chat history
-if streamlit.session_state.questions_history:
-    for question, answer in zip(
-        streamlit.session_state.questions_history,
-        streamlit.session_state.answers_history,
-        strict=False,
-    ):
-        streamlit_chat.message(question, is_user=True)
-        streamlit_chat.message(answer)
-
-# Add sidebar with conversation stats
-with streamlit.sidebar:
-    streamlit.markdown("### Conversation Stats")
-    streamlit.markdown("---")
-
-    # Calculate stats
-    total_messages = len(streamlit.session_state.get("questions_history", []))
-    total_words = sum(
-        len(q.split()) for q in streamlit.session_state.get("questions_history", [])
-    )
-
-    # Display stats
-    streamlit.metric("Total Messages", total_messages)
-    streamlit.metric("Total Words", total_words)
-
-    if total_messages > 0:
-        avg_words = total_words / total_messages
-        streamlit.metric("Avg. Words per Message", f"{avg_words:.1f}")
-
-    streamlit.markdown("---")
-    streamlit.markdown("### Model Info")
-    streamlit.markdown("🤖 llama3.1:8b")
-    streamlit.markdown("📚 FAISS Vector Store")
-
-# Input form at the bottom
-with streamlit.form(key="chat_form", clear_on_submit=True):
-    cols = streamlit.columns([0.05, 0.95])
-    with cols[0]:
-        streamlit.markdown("$", unsafe_allow_html=True)
-    with cols[1]:
-        prompt = streamlit.text_input(
-            "Message",
-            key="user_input",
-            label_visibility="collapsed",
-            placeholder="Type your question and press Enter...",
+# Create a clean layout with columns
+main_container = streamlit.container()
+with main_container:
+    # Title with custom styling
+    col1, col2 = streamlit.columns([6, 1])
+    with col1:
+        streamlit.title("LangGPT")
+    with col2:
+        streamlit.image(
+            "https://api.dicebear.com/7.x/bottts/svg?seed=langgpt", width=64
         )
-    submit = streamlit.form_submit_button(
-        label="Send", type="primary", use_container_width=True
-    )
 
-# Process the input
+    # Chat container with improved spacing
+    chat_container = streamlit.container()
+    with chat_container:
+        if streamlit.session_state.questions_history:
+            for question, answer in zip(
+                streamlit.session_state.questions_history,
+                streamlit.session_state.answers_history,
+                strict=False,
+            ):
+                streamlit_chat.message(
+                    question, is_user=True, avatar_style="adventurer"
+                )
+                streamlit_chat.message(answer, avatar_style="bottts")
+        else:
+            streamlit.info("👋 Hello! Ask me anything about the documentation.")
+
+# Sidebar with modern styling
+with streamlit.sidebar:
+    streamlit.title("Chat Info")
+
+    # Stats in a clean card layout
+    with streamlit.expander("📊 Conversation Stats", expanded=True):
+        total_messages = len(streamlit.session_state.get("questions_history", []))
+        total_words = sum(
+            len(q.split()) for q in streamlit.session_state.get("questions_history", [])
+        )
+
+        col1, col2 = streamlit.columns(2)
+        with col1:
+            streamlit.metric("Messages", total_messages)
+        with col2:
+            streamlit.metric("Words", total_words)
+
+        if total_messages > 0:
+            avg_words = total_words / total_messages
+            streamlit.metric("Avg. Words/Message", f"{avg_words:.1f}")
+
+    # Model info in a clean card
+    with streamlit.expander("🤖 Model Info", expanded=True):
+        streamlit.markdown("""
+        - **Model**: llama3.1:8b
+        - **Embeddings**: FAISS Vector Store
+        - **Framework**: LangChain
+        """)
+
+    # Add a nice divider
+    streamlit.divider()
+
+# Modern input form at the bottom
+with streamlit.container():
+    streamlit.divider()
+    with streamlit.form(key="chat_form", clear_on_submit=True):
+        col1, col2 = streamlit.columns([6, 1])
+        with col1:
+            prompt = streamlit.text_input(
+                "Message",
+                key="user_input",
+                label_visibility="collapsed",
+                placeholder="Ask me anything...",
+            )
+        with col2:
+            submit = streamlit.form_submit_button(
+                label="Send",
+                type="primary",
+                use_container_width=True,
+            )
+
+# Process the input with improved feedback
 if submit and prompt:
-    with streamlit.spinner("Thinking..."):
+    with streamlit.status("Thinking...") as status:
+        # Show a progress message
+        status.update(label="Searching documentation...", state="running")
+
+        # Get the answer
         answer = answer_question(prompt)
         response = format_response(answer)
+
+        # Update status
+        status.update(label="Processing response...", state="running")
 
         # Update session state
         streamlit.session_state.questions_history.append(prompt)
@@ -216,5 +189,8 @@ if submit and prompt:
             {"role": "assistant", "content": response}
         )
 
-        # Rerun to update the UI
-        streamlit.rerun()
+        # Complete status
+        status.update(label="Done!", state="complete")
+
+    # Rerun to update the UI
+    streamlit.rerun()
