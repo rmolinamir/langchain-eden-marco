@@ -22,13 +22,13 @@ spell:
 # Run all checks
 check_all: lint format typecheck spell
 
-# Run chapters
-chapter_%: 
-	uv run --env-file .env python src/chapter_$*/main.py
-
 # Run chapter 6 (streamlit)
 chapter_6:
 	uv run --env-file .env streamlit run src/chapter_6/app.py
+
+# Default rule for running chapters
+chapter_%:
+	uv run --env-file .env python src/chapter_$*/main.py
 
 # Run the project
 run:

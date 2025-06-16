@@ -15,3 +15,4 @@ wheels/
 # Generated artifacts
 **_faiss_index/
 chapter_6_langchain_docs/
+chapter_7_qr_codes/
