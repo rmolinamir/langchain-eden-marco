@@ -13,6 +13,7 @@ dependencies = [
   "langchain-experimental>=0.3.4",
   "langchain-ollama>=0.3.3",
   "langchain-pinecone>=0.2.8",
+  "langgraph>=0.4.8",
   "pandas>=2.3.0",
   "pydantic>=2.11.5",
   "pypdf>=5.6.0",
